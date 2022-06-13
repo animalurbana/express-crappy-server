@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = 5000
 const cors = require('cors')
 const he = require('he')
 const raejs = require('@jodacame/raejs');
@@ -33,7 +34,8 @@ app.get('/rae-api/:palabra', (req, res) => {
 
 })
 
-app.listen( () => {
-  console.log(`Example app listening `)
+app.listen(process.env.PORT , () => {
+  console.log(`Example app listening ${process.env.PORT}`)
   
 })
+
