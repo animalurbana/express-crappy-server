@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 5000
 const cors = require('cors')
 const he = require('he')
 const raejs = require('@jodacame/raejs');
